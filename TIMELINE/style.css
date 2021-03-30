@@ -1,0 +1,76 @@
+.navbar{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    background:black;
+  z-index:1
+  }
+  .navbar a{
+    padding:1vw;
+    text-decoration:none;
+    font-size:2vw;
+    font-weight:bold
+  }
+  .navbar a:link, .navbar a:visited, .navbar a:active{color:orange}
+  .navbar a:hover{color:#7B1FA2;background:white}
+body{
+  background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy06BjIyNmBpZhwt_UV3-j6tCjrzD-CLB19A&usqp=CAU') no-repeat;
+  background-size:cover
+}
+  .timeline{
+    margin-top: 9vw;
+    font-size:2vw
+  }
+.timeline h1{
+  color:white;
+  text-align:center;
+  font-size:4.7vw;
+}
+  .timeline ul li{
+      list-style: none;
+    width:0.5vw;
+    margin:0 auto;
+    background:white;
+    padding-top:3vw
+  }
+  .timeline span{
+      display: block;
+      font-size:2vw;
+    font-weight:bold
+  }
+.timeline ul li div{
+  border-radius:30%;
+  position:relative;
+  width:35vw;
+  padding:2vw
+}
+.timeline ul li:nth-child(even) div{
+  background:purple;
+  left:0vw;
+  transform: translate(4vw, 0);
+  opacity:0;
+  filter:contrast(100%)
+}
+.timeline ul li:nth-child(odd) div{
+  right:39vw;
+  transform: translate(-4vw, 0);
+  background: rgb(230, 137, 32);
+  opacity:0;
+  filter:contrast(100%)
+}
+.timeline ul li div {
+	visibility: hidden;
+	transition: all 1s;
+}
+.timeline ul li.inview div {
+	visibility: visible;
+	transform: none;
+  opacity:1;
+  filter:contrast(500%)
+}
