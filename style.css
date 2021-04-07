@@ -1,0 +1,74 @@
+body{
+  margin:0;
+  padding:0
+}
+html{
+  scroll-behavior:smooth
+}
+.navbar{
+  display:flex;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  background:black
+}
+.navbar a{
+  padding:1vw;
+  text-decoration:none;
+  font-size:max(10px,2vw);
+  font-weight:bold
+}
+.navbar a:link, .navbar a:visited, .navbar a:active{color:orange}
+.navbar a:hover{color:#7B1FA2;background:white}
+.background video{
+  position:absolute;
+  top:0px;
+  z-index:-1;
+  height:max(56vw,170px)
+}
+.welcomescreen{
+    display:flex;
+    justify-content:center;
+}
+.welcomescreen h1{
+  color:white;
+  margin-top:max(26vw,75px);
+  background:navy;
+  font-size:max(4vw,20px);
+  letter-spacing:1vw
+}
+.container {
+	color: white;
+	background:linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	text-align: center;
+  margin-top:max(22vw,63px)
+}
+.container p {
+	margin: 0 auto;
+	width:max(60vw,200px);
+  font-size:max(2vw,15px)
+}
+.container h1{
+  font-size:max(4vw,25px)
+}
+.outer{
+  font-size:max(2vw,15px);
+  display:flex;
+  margin:3vw;
+  text-align:center;
+  background:black;
+  color:white
+}
+.outer h1{
+  font-size:max(4vw,25px)
+}
+.inner1,.inner21,.inner22{
+  margin:2vw;
+  border:0.5vw solid red
+}
+body{overflow-x:hidden}
