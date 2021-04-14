@@ -11,7 +11,7 @@
       </div>
   <div class="heading"><h1>INFORMATION FORM</h1></div>
   
-  <form>
+  <form id="form">
     
     <div class="name">
     <div><label for="fname" name="fname"> first name: </label></div>
@@ -26,7 +26,7 @@
     </div>
     <div class="email">
   <div><label for="email" name="email"> email: </label></div>
-      <div><input required type="email" id="email" placeholder="enter email">
+      <div><input required pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Please enter a valid Email Id" type="email" id="email" placeholder="enter email">
       </div>
     </div>
     <div class="birth">
@@ -41,7 +41,7 @@
       </div>
     <div class="state">
       <div><label for="state" name="state"> state: </label></div>
-      <div><select required name="state">
+      <div><select required name="state" id="state">
         <option disabled selected>--choose</option>
         <option value="Andhra Pradesh">Andhra Pradesh</option>
 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -88,7 +88,7 @@
       <input type="radio" id="no" value="no" name="option"><label class="innerlabel" for="no" name="no" style="color:magenta">no</label>
     </div>
     <div class="checkbox">
-      <div><label for="radio" name="radio">Do you have any of the following symptoms ?</label></div>
+      <div><label for="checkbox" name="checkbox">Do you have any of the following symptoms ?</label></div>
       <input type="checkbox" id="fever" name="symptoms" value="fever">
       <label class="innerlabel" for="fever" name="fever" style="color:magenta">fever</label>
       <input type="checkbox" id="dry cough" name="symptoms" value="dry cough">
@@ -105,6 +105,7 @@
       </div>
     <div class="centres">
     <label for="centres" name="centres">Testing Centres around you:</label>
+    <label id="results"></label>
       </div>
     
     </form>
